@@ -1,4 +1,3 @@
-# 这个最好加入早停法
 # 为方便加入早停法，我把pipeline去掉了
 import pandas as pd
 import numpy as np
