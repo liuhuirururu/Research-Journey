@@ -1,3 +1,10 @@
+'''
+特征处理包括;
+1.缺失值、异常值、重复值等处理
+2.特征融合
+3.添加滞后特征、时间间隔特征等（针对时序数据的处理）
+4.Z-score标准化
+'''
 import warnings
 warnings.filterwarnings("ignore")
 import pandas as pd
@@ -10,7 +17,6 @@ from time_feature import add_time_delta,add_lag_diff_feature
 SEED = 42
 np.random.seed(SEED)
 
-## 源文件无缺失值
 # IRQ异常值检测
 def box_outlier_replace(data,colums):
     data_new = data.copy().astype(float)
